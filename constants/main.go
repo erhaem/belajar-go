@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	//currently having my eyes on https://blog.boot.dev/clean-code/constants-in-go-vs-javascript-and-when-to-use-them/
+
 	// below is a constant, once you declared it u can't modify the value
 	const firstName, lastName string = "Agus", "Susanto"
 
