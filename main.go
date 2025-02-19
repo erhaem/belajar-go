@@ -1,15 +1,15 @@
 package main
 
 import (
-    "fmt"
-    "runtime"
+	"fmt"
+	"runtime"
 )
 
 func main() {
 	// This var "name" below is unused
 	//name := "erhaem"
 
-    fmt.Println("Go version:", runtime.Version())
+	fmt.Println("Go version:", runtime.Version())
 
 	fmt.Println("Just another boring hello world program")
 
