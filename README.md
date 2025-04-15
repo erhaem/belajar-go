@@ -4,6 +4,7 @@
 <ul>
 <li><a href="https://dasarpemrogramangolang.novalagung.com">https://dasarpemrogramangolang.novalagung.com</a></li>
 <li><a href="https://blog.boot.dev/golang">https://blog.boot.dev/golang</a> -- great resource, no cap</li>
+  <li><a href="https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/">https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/</a> -- learn go with tests</li>
 </ul>
 
 ---
