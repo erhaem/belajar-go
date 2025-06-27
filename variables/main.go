@@ -2,8 +2,15 @@ package main
 
 import "fmt"
 
-func main() {
 
+// this following is a global variable
+var globalName string = "Agus"
+
+func main() {
+    // will the global variable be printed?
+    fmt.Printf("BEWARE! a guy coming from outside function: %s | he is %d years old\n", globalName, globalAge)
+
+    fmt.Println("---------------------")
 	// this following called "type manifesting" variables -- the explicit way
 	// syntax: var <variable-name> <data-type>
 	var name string = "erhaem"
@@ -42,4 +49,12 @@ func main() {
 	isSleep := new(bool)
 	fmt.Println(isSleep)
 	fmt.Println(*isSleep)
+
 }
+
+
+// this following global variable
+// will be printed in main() too
+// and it works bcz the compiler
+// reads globals first then read main()
+var globalAge int = 15
