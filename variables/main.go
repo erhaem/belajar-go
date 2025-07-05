@@ -2,15 +2,20 @@ package main
 
 import "fmt"
 
-
 // this following is a global variable
 var globalName string = "Agus"
 
-func main() {
-    // will the global variable be printed?
-    fmt.Printf("BEWARE! a guy coming from outside function: %s | he is %d years old\n", globalName, globalAge)
+// globalBio := "a software engineer" // this wont work
+// it would show you "non-declaration statement outside function body"
+// short variable declaration is not supported outside of function
+// so use this following instead
+var globalBio = "a software engineer"
 
-    fmt.Println("---------------------")
+func main() {
+	// will the global variable be printed?
+	fmt.Printf("BEWARE! a guy coming from outside function: %s | he is %d years old | bio: %s\n", globalName, globalAge, globalBio)
+
+	fmt.Println("---------------------")
 	// this following called "type manifesting" variables -- the explicit way
 	// syntax: var <variable-name> <data-type>
 	var name string = "erhaem"
@@ -51,7 +56,6 @@ func main() {
 	fmt.Println(*isSleep)
 
 }
-
 
 // this following global variable
 // will be printed in main() too
